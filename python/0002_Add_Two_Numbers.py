@@ -7,26 +7,19 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def addTwo(self, l1, l2, carry):
-        result = carry
+    def addTwo(self, l1, l2, result=0):
         if l1 is not None:
             result += l1.val
             l1 = l1.next
         if l2 is not None:
             result += l2.val
             l2 = l2.next
-        if result >= 10:
-            result = result - 10
-            carry = 1
-        else:
-            carry = 0
-        if (l1 is None and l2 is None and carry == 0):
-            return ListNode(result)
-        else:
-            return ListNode(result, self.addTwo(l1, l2, carry))
+        if (l1 is None and l2 is None and result < 10):
+            return ListNode(result%10)
+        return ListNode(result%10, self.addTwo(l1, l2, result >= 10))
 
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        return self.addTwo(l1,l2,0)
+        return self.addTwo(l1,l2)
 
 def getLinkedList(l: List, i: int):
     if i == len(l) - 1:
