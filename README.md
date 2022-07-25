@@ -7,3 +7,4 @@
 | 5   | [Longest Palindromic Substring](https://github.com/phakhawatchu/leetcode/blob/main/python/0005_Longest_Palindromic_Substring.py)                                   | Medium     |
 | 6   | [Zigzag Conversion](https://github.com/phakhawatchu/leetcode/blob/main/python/0006_Zigzag_Conversion.py)                                                           | Medium     |
 | 8   | [String to Integer (atoi)](<https://github.com/phakhawatchu/leetcode/blob/main/python/0008_String_to_Integer_(atoi).py>)                                           | Medium     |
+| 9   | [Palindrome Number](https://github.com/phakhawatchu/leetcode/blob/main/python/0009_Palindrome_Number.py)                                                           | Easy       |
